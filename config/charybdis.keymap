@@ -14,87 +14,9 @@
 &kp TAB        &kp Q            &kp W            &kp F         &kp P              &kp B        &kp J        &kp L                 &kp U                 &kp Y             &kp SEMI     &kp BACKSLASH
 &mt RCTRL ESCAPE  &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LCTRL S  &hml LEFT_SHIFT T  &kp G        &kp M        &hmr RIGHT_SHIFT N    &hmr RIGHT_CONTROL E  &hmr RIGHT_ALT I  &hmr RGUI O  &kp APOS
 &kp LSHFT         &kp Z            &kp X            &kp C         &kp D              &kp V        &kp K        &kp H                 &kp COMMA             &kp DOT           &kp FSLH     &sl 9
-                                                    &kp LEFT_WIN  &lt 11 SPACE       &lt 6 TAB    &lt 7 ENTER  &mt DELETE BACKSPACE
-            >;
-        };
+&kp LSHFT         &kp Z            &kp X            &kp C         &kp D              &kp V        &kp K        &kp H                 &kp COMMA             &kp DOT           &kp FSLH     &sl 9
+&kp LSHFT         &kp Z            &kp X            &kp C         &kp D              &kp V        &kp K        &kp H                
 
-        Mouse {
-            bindings = <
-&trans  &trans  &trans    &trans    &trans     &trans    &trans  &trans     &trans    &trans     &trans  &trans
-&trans  &trans  &trans    &trans    &trans     &trans    &trans  &trans     &mo 2     &trans     &trans  &trans
-&trans  &none   &mkp MB1  &mkp MB3  &mkp RCLK  &trans    &trans  &mkp LCLK  &mkp MB3  &mkp RCLK  &mo 3   &trans
-                          &trans    &trans     &trans    &trans  &trans
-            >;
-        };
-
-        scroll {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans
-            >;
-
-            label = "scroll";
-        };
-
-        colemak-dh_without_hrm {
-            bindings = <
-&kp TAB  &kp Q  &kp W  &kp F   &kp P   &kp B     &kp J   &kp L   &kp U      &kp Y    &kp SEMI  &kp BSPC
-&trans   &kp A  &kp R  &kp S   &kp T   &kp G     &kp M   &kp N   &kp E      &kp I    &kp O     &kp APOS
-&trans   &kp Z  &kp X  &kp C   &kp D   &kp V     &kp K   &kp H   &kp COMMA  &kp DOT  &kp FSLH  &trans
-                       &trans  &trans  &trans    &trans  &trans
-            >;
-        };
-
-    
-
-        number {
-            bindings = <
-&trans  &kp KP_MULTIPLY  &kp N7  &kp N8  &kp N9  &kp PLUS     &none   &none      &none      &none     &none     &none
-&trans  &kp KP_DIVIDE    &kp N4  &kp N5  &kp N6  &kp MINUS    &none   &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &trans
-&none   &kp DOT          &kp N1  &kp N2  &kp N3  &kp N0       &none   &none      &none      &none     &none     &trans
-                                 &trans  &none   &trans       &trans  &trans
-            >;
-
-            label = "num";
-        };
-
-        fun {
-            bindings = <
-&none  &kp F12  &kp F7  &kp F8  &kp F9  &kp PRINTSCREEN    &none  &none      &none      &none     &none     &none
-&none  &kp F11  &kp F4  &kp F5  &kp F6  &kp SCROLLLOCK     &none  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &none
-&none  &kp F10  &kp F1  &kp F2  &kp F3  &kp PAUSE_BREAK    &none  &none      &none      &none     &none     &none
-                        &none   &none   &mo 9              &none  &trans
-            >;
-        };
-
-        switch {
-            bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans       &trans  &trans
-&trans      &trans        &bootloader   &to 5         &trans        &trans          &trans  &trans  &trans  &bootloader  &trans  &trans
-&trans      &trans        &to 0         &to 3         &to 4         &trans          &trans  &trans  &trans  &trans       &trans  &trans
-                                        &trans        &trans        &trans          &trans  &trans
-            >;
-
-            label = "switch";
-        };
-
-        reverse {
-            bindings = <
-&trans  &kp SEMI  &kp Y    &kp U      &kp L   &kp J     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp O     &kp I    &kp E      &kp N   &kp M     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp FSLH  &kp DOT  &kp COMMA  &kp H   &kp K     &trans  &trans  &trans  &trans  &trans  &trans
-                           &trans     &trans  &trans    &trans  &trans
-            >;
-        };
-
-        sym {
-            bindings = <
-&trans  &kp LEFT_BRACKET  &kp AMPS    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_BRACKET    &trans    &trans    &trans        &trans     &trans  &trans
-&trans  &kp COLON         &kp DOLLAR  &kp PERCENT   &kp CARET             &kp PLUS             &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans  &trans
-&trans  &kp TILDE         &kp EXCL    &kp AT        &kp DOLLAR            &kp PIPE             &trans    &trans    &trans        &trans     &trans  &trans
-                                      &trans        &trans                &trans               &trans    &trans
             >;
         };
     };
