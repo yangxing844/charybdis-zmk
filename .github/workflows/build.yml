@@ -1,5 +1,11 @@
-on: [push, pull_request, workflow_dispatch]
+name: Build ZMK firmware
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - config/**
+      - build.yaml
 
 jobs:
   build:
-    uses: yangxing844/zmk/.github/workflows/build-user-config.yml@remap-with-mouse
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
