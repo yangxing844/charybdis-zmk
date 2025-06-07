@@ -11,61 +11,61 @@
 
         colemak-dh {
             bindings = <
-&kp GRAVE  &kp N1  &kp N2     &kp N3     &kp N4          &kp N5          &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp TAB    &kp Q   &kp W      &kp E      &kp R           &kp T           &kp Y   &kp U   &kp I      &kp O     &kp P     &kp LBKT
-&kp CAPS   &kp A   &kp S      &kp D      &kp F           &kp G           &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp APOS
-&kp LSHFT  &kp Z   &kp X      &kp C      &kp V           &kp B           &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&kp LGUI   &kp Z   &kp SPACE  &kp LCTRL  &lt 1 LEFT_ALT                          &kp X   &kp BSPC   &kp BSPC  &kp RGUI  &lt 5 ENTER
+&kp GRAVE    &kp N1     &kp N2     &kp N3    &kp N4    &kp N5      &kp N6  &kp N7     &kp N8     &kp N9     &kp N0     &kp BSPC
+&kp TAB      &kp Q      &kp W      &kp F     &kp P     &kp B       &kp J   &kp L      &kp U      &kp Y      &kp SEMI   &kp BSLH
+&kp CAPS     &kp A      &kp R      &kp S     &kp T     &kp G       &kp M   &kp N      &kp E      &kp I      &kp O      &kp APOS
+&kp LSHFT    &kp Z      &kp X      &kp C     &kp D     &kp V       &kp K   &kp H      &kp COMMA  &kp DOT    &kp FSLH   &kp RSHFT
+&lt 1 SPACE  &kp ENTER  &kp LSHFT  &kp LGUI  &kp BSPC                      &kp LSHFT  &kp LALT   &kp RCTRL  &kp ENTER  &kp BSPC
             >;
         };
 
         layer_1 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans    &trans    &trans     &trans  &trans
-&trans  &trans  &kp N7  &kp N8  &kp N9  &trans          &trans  &trans    &kp UP    &trans     &trans  &trans
-&trans  &trans  &kp N4  &kp N5  &kp N6  &trans          &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
-&trans  &trans  &kp N1  &kp N2  &kp N3  &trans          &trans  &trans    &trans    &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans                                              &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans    &trans    &trans     &trans  &trans
+&trans  &trans  &kp N7  &kp N8  &kp N9  &trans      &trans  &trans    &kp UP    &trans     &trans  &trans
+&trans  &trans  &kp N4  &kp N5  &kp N6  &trans      &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
+&trans  &trans  &kp N1  &kp N2  &kp N3  &trans      &trans  &trans    &trans    &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans                      &trans    &trans    &trans
             >;
         };
 
         auto_mouse {
             bindings = <
-&trans     &trans     &trans          &trans     &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &trans     &trans          &trans     &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &trans     &trans          &mo 3      &mo 4         &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &trans     &trans          &trans     &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&mkp MCLK  &mkp RCLK  &msc SCRL_DOWN  &mkp LCLK  &msc SCRL_UP                                          &trans  &trans  &trans
+&trans     &trans     &trans          &trans     &trans        &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &trans     &trans          &trans     &trans        &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &trans     &trans          &mo 3      &mo 4         &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &trans     &trans          &trans     &trans        &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&mkp MCLK  &mkp RCLK  &msc SCRL_DOWN  &mkp LCLK  &msc SCRL_UP                      &trans  &trans  &trans
             >;
         };
 
         scroll {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                                          &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans
             >;
         };
 
         snipe_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                                          &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans
             >;
         };
 
         settings {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &bootloader          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &bt BT_CLR           &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans               &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans               &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                                               &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &bootloader      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &bt BT_CLR       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans           &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans           &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                           &trans  &trans  &trans
             >;
         };
     };
