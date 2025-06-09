@@ -63,6 +63,31 @@
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <27 28>;
         };
+
+        underscore {
+            bindings = <&kp UNDER>;
+            key-positions = <42 43>;
+        };
+
+        bra {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <27 26>;
+        };
+
+        right {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <32 33>;
+        };
+
+        equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <40 41>;
+        };
+
+        delete {
+            bindings = <&kp DELETE>;
+            key-positions = <39 40>;
+        };
     };
 
     keymap {
@@ -80,21 +105,21 @@
 
         layer_1 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans      &trans    &trans    &trans        &trans     &trans  &trans
-&trans  &trans  &kp N7  &kp N8  &kp N9  &trans      &trans    &trans    &kp UP        &trans     &trans  &trans
-&trans  &trans  &kp N4  &kp N5  &kp N6  &trans      &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans  &trans
-&trans  &trans  &kp N1  &kp N2  &kp N3  &kp N0      &trans    &trans    &trans        &trans     &trans  &trans
-&trans  &trans  &trans  &kp N0  &trans                        &trans    &trans        &trans
+&trans  &trans   &trans  &trans  &trans  &trans         &trans    &trans    &trans        &trans     &trans  &trans
+&trans  &trans   &kp N7  &kp N8  &kp N9  &kp PLUS       &trans    &trans    &kp UP        &trans     &trans  &trans
+&trans  &trans   &kp N4  &kp N5  &kp N6  &kp MINUS      &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans  &trans
+&trans  &kp DOT  &kp N1  &kp N2  &kp N3  &kp N0         &trans    &trans    &trans        &trans     &trans  &trans
+&trans  &trans   &trans  &kp N0  &trans                           &trans    &trans        &trans
             >;
         };
 
         auto_mouse {
             bindings = <
-&trans  &trans  &trans          &trans     &trans        &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans          &trans     &trans        &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans          &trans     &trans        &trans      &trans  &mo 3   &mo 4   &trans  &trans  &trans
-&trans  &trans  &mkp LCLK       &mkp MCLK  &mkp RCLK     &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &msc SCRL_DOWN  &trans     &msc SCRL_UP                      &trans  &trans  &trans
+&trans  &trans     &trans  &trans     &trans     &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans  &trans     &trans     &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans  &trans     &trans     &trans      &trans  &mo 4   &mo 3   &trans  &trans  &trans
+&trans  &trans     &trans  &trans     &trans     &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &mkp RCLK  &trans  &mkp LCLK  &mkp MCLK                      &trans  &trans  &trans
             >;
         };
 
@@ -140,11 +165,11 @@
 
         symbol {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans      &trans      &trans      &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LS(N4)  &kp LS(N5)  &kp LS(N6)  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans      &trans      &trans                          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
