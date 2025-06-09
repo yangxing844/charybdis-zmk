@@ -7,6 +7,7 @@
 #include "charybdis.dtsi"
 
 #include <input/processors.dtsi>
+#include <dt-bindings/zmk/input_transform.h>
 
 &kscan0 {
 	col-gpios
@@ -25,7 +26,7 @@
 	// when layer 2 is active, the trackball will act as a mouse wheel
 	scroller {
 		layers = <3>;
-		input-processors = <&zip_xy_to_scroll_mapper>;
+		input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)  &zip_xy_scaler 1 10  &zip_xy_to_scroll_mapper>;
 	};
 	// default when layer 5 is active, the trackball will move more slowly
 		snipe {
