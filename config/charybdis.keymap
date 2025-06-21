@@ -85,8 +85,13 @@
         };
 
         delete {
-            bindings = <&kp DELETE>;
+            bindings = <&kp BACKSPACE>;
             key-positions = <39 40>;
+        };
+
+        delete {
+            bindings = <&kp DELETE>;
+            key-positions = <39 38>;
         };
     };
 
@@ -115,11 +120,11 @@
 
         auto_mouse {
             bindings = <
-&trans  &trans     &trans  &trans     &trans     &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &trans  &trans     &trans     &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &trans  &trans     &trans     &trans      &trans  &mo 4   &mo 3   &trans  &trans  &trans
-&trans  &trans     &trans  &trans     &trans     &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &mkp RCLK  &trans  &mkp LCLK  &mkp MCLK                      &trans  &trans  &trans
+&trans  &trans     &trans     &trans  &trans     &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans     &trans  &trans     &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans     &trans  &trans     &trans      &trans  &mo 4   &mo 3   &trans  &trans  &trans
+&trans  &trans     &trans     &trans  &trans     &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &mkp MCLK  &mkp RCLK  &trans  &mkp LCLK                      &trans  &trans  &trans
             >;
         };
 
