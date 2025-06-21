@@ -84,7 +84,7 @@
             key-positions = <40 41>;
         };
 
-        delete {
+        backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <39 40>;
         };
