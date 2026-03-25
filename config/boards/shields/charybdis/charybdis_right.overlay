@@ -5,6 +5,11 @@
  */
  
 #include "charybdis.dtsi"
+
+#include <input/processors.dtsi>
+#include <dt-bindings/zmk/input_transform.h>
+
+
 &matrix_transform0 {
 	col-offset = <6>;
 };
