@@ -19,3 +19,7 @@ include:
   - board: mikoto//zmk
     shield: charybdis_right
 
+  - board: nice_nano//zmk
+    shield: settings_reset
+  - board: mikoto//zmk
+    shield: settings_reset
