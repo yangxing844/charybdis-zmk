@@ -12,11 +12,10 @@
 #     shield: reviung41
 #
 
-board: [ "nice_nano//zmk"]
-shield: [ "charybdis_left"]
-
-board: [ "mikoto//zmk"]
-shield: [ "charybdis_right"]
-
-snippet: ["studio-rpc-usb-uart"]
+include:
+  - board: nice_nano//zmk
+    shield: charybdis_left
+    snippet: studio-rpc-usb-uart
+  - board: mikoto//zmk
+    shield: charybdis_right
 
