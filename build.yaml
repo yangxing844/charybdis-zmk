@@ -13,7 +13,10 @@
 #
 
 board: [ "nice_nano//zmk"]
-shield: [ "charybdis_left","charybdis_right"]
+shield: [ "charybdis_left"]
+
+board: [ "mikoto//zmk"]
+shield: [ "charybdis_right"]
 
 snippet: ["studio-rpc-usb-uart"]
 
