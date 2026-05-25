@@ -15,8 +15,8 @@
 		= <&pro_micro 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 		, <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 		, <&pro_micro 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-		, <&pro_micro 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-		, <&pro_micro 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+		, <&pro_micro 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+		, <&pro_micro 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 		, <&pro_micro 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 		;
 };
@@ -25,17 +25,17 @@
 &pinctrl {
     spi2_default: spi2_default {
 				group1 {
-						psels = <NRF_PSEL(SPIM_MOSI, 0, 17)>,
-						<NRF_PSEL(SPIM_MISO, 0, 17)>,
-						<NRF_PSEL(SPIM_SCK, 0, 8)>;
+				psels = <NRF_PSEL(SPIM_SCK, 0, 4)>,
+                        <NRF_PSEL(SPIM_MOSI, 0, 17)>,
+                        <NRF_PSEL(SPIM_MISO, 0, 17)>;
 				};
 		};
 	
     spi2_sleep: spi2_sleep {
 				group1 {
-						psels = <NRF_PSEL(SPIM_MOSI, 0, 17)>,
-						<NRF_PSEL(SPIM_MISO, 0, 17)>,
-						<NRF_PSEL(SPIM_SCK, 0, 8)>;
+						  psels = <NRF_PSEL(SPIM_SCK, 0, 4)>,
+                                  <NRF_PSEL(SPIM_MOSI, 0, 17)>,
+                                  <NRF_PSEL(SPIM_MISO, 0, 17)>;
 						low-power-enable;
 				};
 		};
@@ -66,7 +66,7 @@ nice_view_spi: &spi2 {
 			compatible ="pixart,pmw3610-alt";
 			reg = <0>;
 			spi-max-frequency = <2000000>;
-			irq-gpios = <&pro_micro 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+			irq-gpios = <&gpio0 8 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
 			cpi = <600>;
 			evt-type = <INPUT_EV_REL>;
 			x-input-code = <INPUT_REL_X>;
